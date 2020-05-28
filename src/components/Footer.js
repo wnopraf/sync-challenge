@@ -27,12 +27,13 @@ export const Footer = () => {
 
 const Sfooter = styled.footer`
   padding: 1rem 0;
-  background: black;
-  color: white;
+  background: #0a0a0a;
+  color: #9f9f9f;
   font-size: 0.7rem;
 `
 const NavWrapper = styled.div`
   display: flex;
+  color: #f9f9f9;
   justify-content: space-between;
   align-items: center;
 `
