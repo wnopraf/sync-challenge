@@ -11,10 +11,9 @@ const HeroCard = styled.div`
     );
   background-size: 45rem, 100%;
   background-repeat: no-repeat;
-  background-position-x: 65vw, 0;
-  background-position-y: -70vh, 0;
+  background-position-x: 69vw, 0;
+  background-position-y: -23.35rem, 0;
   border-radius: 1rem;
-
   padding: 2rem 0;
 `
 const HeroFrame = styled.div`
