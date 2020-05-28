@@ -1,9 +1,12 @@
 import React from 'react'
-import logo from './logo.svg'
-import './App.css'
+import styled from 'styled-components'
 
 function App() {
-  return <div className="App"></div>
+  return (
+    <section className="app">
+      <h1>Hello Sync !!!</h1>
+    </section>
+  )
 }
 
 export default App

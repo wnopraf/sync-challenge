@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Container = styled.section`
+export default styled.section`
   margin: 0 auto;
+  padding: 0 1rem;
   width: 100%;
   @media (min-width: 640px) {
     max-width: 640px;

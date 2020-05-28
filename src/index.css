@@ -1,6 +1,54 @@
+@font-face {
+  font-family: 'Nova Bold';
+  src: url('assets/fonts/Noveltica Nova-Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Nova Bolditalic';
+  src: url('assets/fonts/Noveltica Nova-BoldItalic.otf') format('opentype');
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h3,
+h4,
+h6 {
+  font-family: 'Nova Bold';
+  margin-block: 0;
+}
+figure {
+  margin-block: 0;
+  margin-inline: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  margin-block: 0;
+  padding-inline: 0;
+}
+.st0 {
+  fill: white;
+}
+.login-header {
+  margin-top: 2.5rem;
+}
+.logo-wrapper {
+  width: 3rem;
+}
+button > svg {
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-left: 0.5rem;
+  vertical-align: text-top;
+}
+button:hover > svg > g {
+  fill: #d4f42a;
+}
+.soft-fadeOut {
+  opacity: 0.1;
 }
