@@ -3,12 +3,7 @@ import styled from 'styled-components'
 import laptop from '../assets/bg/laptop-min.png'
 const HeroCard = styled.div`
   background-image: url(${laptop}),
-    linear-gradient(
-      18deg,
-      rgba(11, 11, 11, 1) 0%,
-      rgb(18, 17, 17) 45%,
-      rgb(46, 46, 46) 100%
-    );
+    linear-gradient(25deg, #0a0a0a 0%, #343538 100%);
   background-size: 45rem, 100%;
   background-repeat: no-repeat;
   background-position-x: 69vw, 0;
