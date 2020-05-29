@@ -15,7 +15,9 @@ function App() {
       <Hero>
         <Container>
           <figure className="logo-wrapper">
-            <Logo />
+            <a href="/">
+              <Logo />
+            </a>
           </figure>
           <ContentWrapper class="content-wrapper">
             <LoginHeader />
