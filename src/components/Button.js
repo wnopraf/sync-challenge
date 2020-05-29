@@ -12,6 +12,7 @@ export default styled.button`
   font-weight: bold;
   cursor: pointer;
   transition: background, color, 300ms;
+  outline: none;
   &:hover {
     background: ${(props) => props.textColor || '#0A0A0A'};
     color: ${(props) => props.background || '#D7FF00'};

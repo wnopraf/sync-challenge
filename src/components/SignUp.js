@@ -1,15 +1,38 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Button from './Button'
 import Image from './Image'
 import Logo from '../assets/logos/Logo_X_(Fluorescent).svg'
 
 export const SignUp = () => {
+  const [isAnimated, setIsAnimated] = useState(false)
+  useEffect(() => {
+    const resetAnimation = () => {
+      setIsAnimated(false)
+      console.log('animation end')
+    }
+    window.addEventListener('animationend', resetAnimation)
+    return () => {
+      window.removeEventListener('animationend', resetAnimation)
+    }
+  }, [])
+  const onClick = () => {
+    setIsAnimated(true)
+    console.log('Animated')
+  }
+
   return (
     <SignUpSection>
       <SignUpWrapper>
         <H6>Haven't got an account yet?</H6>
-        <Button background={'#006FCF'} textColor="white">
+        <Button
+          className={
+            'animate__animated ' + (isAnimated ? 'animate__heartBeat' : '')
+          }
+          background={'#006FCF'}
+          textColor="white"
+          onClick={onClick}
+        >
           sign up
         </Button>
       </SignUpWrapper>
