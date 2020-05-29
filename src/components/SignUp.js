@@ -27,7 +27,7 @@ export const SignUp = () => {
         <H6>Haven't got an account yet?</H6>
         <Button
           className={
-            'animate__animated ' + (isAnimated ? 'animate__heartBeat' : '')
+            'animate__animated ' + (isAnimated ? 'animate__bounceIn' : '')
           }
           background={'#006FCF'}
           textColor="white"
