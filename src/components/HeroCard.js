@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import laptop from '../assets/bg/laptop.png'
+import laptop from '../assets/bg/laptop-min.png'
 const HeroCard = styled.div`
-  background-image: url(static/media/laptop.85638e4f.png),
+  background-image: url(${laptop}),
     linear-gradient(
       18deg,
       rgba(11, 11, 11, 1) 0%,
