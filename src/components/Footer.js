@@ -66,7 +66,7 @@ const Sfooter = styled.footer`
   color: #9f9f9f;
   font-size: 0.7rem;
 `
-const NavWrapper = styled.div`
+const NavWrapper = styled.nav`
   display: flex;
   color: #f9f9f9;
   justify-content: space-between;
