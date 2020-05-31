@@ -12,7 +12,7 @@ const HeroCard = styled.div`
   padding: 2rem 0;
 `
 const HeroFrame = styled.div`
-  padding: 0.25rem;
+  padding: 0.35rem;
 
   background-color: #2a2a32;
 `
