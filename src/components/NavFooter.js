@@ -20,6 +20,9 @@ const Ul = styled.ul`
   li:not(:last-child):after {
     content: '|';
   }
+  li:last-child > a {
+    padding-right: 0;
+  }
 `
 const Link = styled.a`
   padding: 0.5rem 1rem;
