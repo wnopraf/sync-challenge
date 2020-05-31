@@ -40,13 +40,13 @@ ul {
 .logo-wrapper {
   width: 3.5rem;
 }
-button > svg {
+button .arrow-svg {
   width: 0.7rem;
   height: 0.7rem;
   margin-left: 0.5rem;
   vertical-align: text-top;
 }
-button:hover > svg > g {
+button:hover .arrow-svg > g {
   fill: #d4f42a;
 }
 .soft-fadeOut {
