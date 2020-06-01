@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { Button } from './Button'
 import { IoIosCheckmark } from 'react-icons/io'
 
-export default () => {
+const PersonalBusiness = () => {
   const [loginState, setLoginState] = useState('personal')
   const [animateContinue, setAnimateContinue] = useState(false)
   const [isOut, setIsOut] = useState(false)
@@ -20,7 +20,7 @@ export default () => {
     setAnimateContinue(true)
   }
   return (
-    <PersonalBusiness>
+    <PersonalBusinessWrapper>
       <LoginPaths>
         <LoginCheck
           htext={'personal'}
@@ -42,7 +42,7 @@ export default () => {
         />
         <CustomCheck animateContinue={animateContinue} isOut={isOut} />
       </ContinueButton>
-    </PersonalBusiness>
+    </PersonalBusinessWrapper>
   )
 }
 const ContinueButton = styled(Button)`
@@ -50,7 +50,7 @@ const ContinueButton = styled(Button)`
   background: ${(props) => (props.animateContinue ? '#95b100' : '#D7FF00')};
   border-color: ${(props) => (props.animateContinue ? '#95b100' : '#D7FF00')};
 `
-const PersonalBusiness = styled.section`
+const PersonalBusinessWrapper = styled.section`
   margin-top: 3rem;
   display: flex;
   align-items: center;
@@ -111,3 +111,4 @@ const IoIosCheckmarkTransparent = styled(IoIosCheckmark)`
   height: ${(props) => (props.isOut ? '1.5rem' : '0')};
   opacity: ${(props) => (props.isOut ? '1' : '0')};
 `
+export default PersonalBusiness
