@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import HCustom from './HCustom'
 import CheckButton from './CheckButton'
 
-export default ({ htext, onLogin, loginState }) => (
+const LoginCheck = ({ htext, onLogin, loginState }) => (
   <LoginWrapper className={`login-${htext}`}>
     <HCustom className={`${loginState === htext ? '' : 'soft-fadeOut'} `}>
       {htext}
@@ -13,7 +13,7 @@ export default ({ htext, onLogin, loginState }) => (
   </LoginWrapper>
 )
 
-const LoginWrapper = styled.div`
+const StyledLogin = styled.div`
   display: flex;
   align-items: center;
 
@@ -21,3 +21,7 @@ const LoginWrapper = styled.div`
     margin-left: auto;
   }
 `
+
+const LoginWrapper = ({ children }) => <StyledLogin>{children}</StyledLogin>
+
+export default LoginCheck

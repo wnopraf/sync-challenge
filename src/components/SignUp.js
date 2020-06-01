@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import Button from './Button'
+import { Button } from './Button'
 import Image from './Image'
 import Logo from '../assets/logos/Logo_X_(Fluorescent).svg'
 
@@ -24,7 +24,7 @@ export const SignUp = () => {
   return (
     <SignUpSection>
       <SignUpWrapper>
-        <H6>Haven't got an account yet?</H6>
+        <PSignUp>Haven't got an account yet?</PSignUp>
         <Button
           className={
             'animate__animated ' + (isAnimated ? 'animate__bounceIn' : '')
@@ -60,6 +60,8 @@ const SignUpWrapper = styled.div`
     margin-left: 1rem;
   }
 `
-const H6 = styled.h6`
+const PSignUp = styled.p`
   color: gray;
+  font-weight: 900;
+  font-size: 0.8rem;
 `

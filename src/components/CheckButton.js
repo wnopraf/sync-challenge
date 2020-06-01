@@ -14,7 +14,7 @@ const CheckBox = styled.input`
   margin: 0;
 `
 
-export default ({ value, onLogin, loginState }) => {
+const CheckButton = ({ value, onLogin, loginState }) => {
   return (
     <CheckBoxWrapper className="checkbox-wrapper">
       <CheckBox type="checkbox" value={value} onChange={onLogin} />
@@ -39,3 +39,5 @@ const CheckBoxWrapper = styled.div`
     color: white;
   }
 `
+
+export default CheckButton

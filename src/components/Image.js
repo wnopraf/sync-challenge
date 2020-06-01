@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 import React from 'react'
-export default styled.img`
+
+const ImgStyled = styled.img`
   height: ${(props) => props.height || 'auto'};
   width: ${(props) => props.width || 'auto'};
 `
+
+const Image = (props) => <ImgStyled {...props} />
+
+export default Image

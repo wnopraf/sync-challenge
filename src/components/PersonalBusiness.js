@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import LoginCheck from './LoginCheck'
 import { ReactComponent as ArrowSvg } from '../assets/logos/flecha_button.svg'
 import styled from 'styled-components'
-import Button from './Button'
+import { Button } from './Button'
 import { IoIosCheckmark } from 'react-icons/io'
 
 export default () => {

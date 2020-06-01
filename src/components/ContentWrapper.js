@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default ({ children }) => <Section>{children}</Section>
+const ContentWrapper = ({ children }) => <Section>{children}</Section>
 
 const Section = styled.section`
   padding: 4rem 2.5rem;
@@ -10,3 +10,4 @@ const Section = styled.section`
     max-width: 80%;
   }
 `
+export default ContentWrapper

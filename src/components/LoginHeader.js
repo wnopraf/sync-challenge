@@ -2,14 +2,22 @@ import React from 'react'
 import styled from 'styled-components'
 import HCustom from './HCustom'
 
-export default () => (
+const LoginHeader = () => (
   <section className="login-header">
     <HCustom>Online Login</HCustom>
-    <Plogin>Enter your mobile number to log in to your account.</Plogin>
+    <PLogin>Enter your mobile number to log in to your account.</PLogin>
   </section>
 )
 
-const Plogin = styled.h6`
+const PStyled = styled.p`
   color: white;
+  font-weight: 900;
+  font-size: 0.8rem;
   margin-top: ${(props) => props.marginTop || '.5rem'};
 `
+
+const PLogin = ({ children, ...props }) => (
+  <PStyled {...props}>{children}</PStyled>
+)
+
+export default LoginHeader
