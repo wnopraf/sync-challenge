@@ -63,5 +63,5 @@ const SignUpWrapper = styled.div`
 const PSignUp = styled.p`
   color: gray;
   font-weight: 900;
-  font-size: 0.8rem;
+  font-size: 0.65rem;
 `
