@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import laptop from '../assets/bg/laptop_max_compress.png'
+import laptop from '../assets/bg/laptop_cpr.png'
 const HeroCardStyled = styled.div`
   background-image: url(${laptop}),
     linear-gradient(25deg, #0a0a0a 0%, #343538 100%);
