@@ -13,7 +13,7 @@ const PStyled = styled.p`
   color: white;
   font-weight: 900;
   font-size: 0.8rem;
-  margin-top: ${(props) => props.marginTop || '.5rem'};
+  margin-top: ${(props) => props.marginTop};
 `
 
 const PLogin = ({ children, ...props }) => (

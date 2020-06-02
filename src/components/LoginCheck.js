@@ -22,6 +22,8 @@ const StyledLogin = styled.div`
   }
 `
 
-const LoginWrapper = ({ children }) => <StyledLogin>{children}</StyledLogin>
+const LoginWrapper = ({ children, className }) => (
+  <StyledLogin className={className}>{children}</StyledLogin>
+)
 
 export default LoginCheck

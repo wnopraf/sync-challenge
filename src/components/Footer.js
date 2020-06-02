@@ -61,7 +61,7 @@ export const Footer = () => {
 }
 
 const Sfooter = styled.footer`
-  padding: 1rem 0;
+  padding: 1.75rem 0;
   background: #0a0a0a;
   color: #9f9f9f;
   font-size: 0.7rem;
@@ -74,7 +74,7 @@ const NavWrapper = styled.nav`
 `
 
 const FooterInfoWrapper = styled.div`
-  margin-top: 2rem;
+  margin-top: 1.35rem;
   font-size: 0.6rem;
   display: flex;
   justify-content: space-between;

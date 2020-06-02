@@ -51,11 +51,11 @@ const ContinueButton = styled(Button)`
   border-color: ${(props) => (props.animateContinue ? '#95b100' : '#D7FF00')};
 `
 const PersonalBusinessWrapper = styled.section`
-  margin-top: 3rem;
+  margin-top: 4.5rem;
   display: flex;
   align-items: center;
   .login-business {
-    margin-top: 0.75rem;
+    margin-top: 0.35rem;
   }
   button {
     margin-left: auto;
